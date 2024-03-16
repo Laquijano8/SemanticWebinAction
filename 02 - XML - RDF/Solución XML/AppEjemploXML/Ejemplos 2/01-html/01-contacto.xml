@@ -1,0 +1,21 @@
+<listaContactos>
+    <contacto>
+        <nombre> LUZ </nombre>
+        <apellido> QUIJANO</apellido>
+        <fecha_nacimiento>17/09/1987 </fecha_nacimiento>
+        <correos>
+            <correo>luz.quijano1@gmail.com </correo>
+            <correo>luzvidal@unicauca.edu.co </correo>
+        </correos>
+    </contacto>
+
+    <contacto>
+        <nombre>JUAN</nombre>
+        <apellido> QUIJANO</apellido>
+        <fecha_nacimiento>17/09/1987 </fecha_nacimiento>
+        <correos>
+            <correo>juan.quijano1@gmail.com </correo>
+            <correo>juanvidal@unicauca.edu.co </correo>
+        </correos>
+    </contacto>
+</listaContactos>
