@@ -4,42 +4,32 @@
     <title>Ejemplo Microformatos Dublin Core de HTML</title>
     <!--Estos son ejemplos del uso de archivos externos para etiquetado semántico
     En este caso esta usando la especificación de Dublin Core-->
-    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
-
-    <!--Este es un ejemplo de uso de etiquetas "meta" de HTML-->
-    <meta name="DC.title" content="Resumen de Web Semántica" />
-    <meta name="DC.identifier" content="https://github.com/manzamb/SemanticWebinAction/blob/master/Anotacion%20Curso/WebsiteAnotacion/01-HTML.htm" />
-    <meta name="DC.description" content="Este es un taller HTLM en el curso de Web Semántica" />
-    <meta name="DC.subject" content="html, taller, Web Semántica" />
-    <meta name="DC.language" scheme="ISO639-1" content="es" />
-    <meta name="DC.creator" content="https://sites.google.com/site/hojadevidamiguelanino/" />
-    <meta name="DC.publisher" content="Universidad del Cauca" />
-    <meta name="DC.license" content="Creative Commons" />
-    <meta name="DC.type" scheme="DCMITYPE" content="http://purl.org/dc/dcmitype/InteractiveResource" />
-    <link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
-    <meta name="DCTERMS.created" scheme="ISO8601" content="2018-03-05" />
-
-    <!--Esta es otra forma de usar etiquetas pero utilizando un archivo RDF con Dublin Core-->
-    <link rel="meta"
-          type="application/rdf+xml"
-          href="/metadatos.rdf" />
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+	<meta name="DC.title" content="Resumen de Web Semántica">
+	<meta name="DC.identifier" content="www.ejemplo.com/web-semantica">
+	<meta name="DC.description" content="La Web Semántica es una extensión de la web actual en la que la información tiene un significado bien definido, lo que permite a las máquinas entender y procesar la información de manera más efectiva">
+	<meta name="DC.subject" content="websemantica, hipertexto">
+	<meta name="DC.language" scheme="ISO639-1" content="es">
+	<meta name="DC.creator" content="http://quijano.com">
+	<meta name="DC.type" scheme="DCMITYPE" content="http://purl.org/dc/dcmitype/Text">
+	<meta name="DC.relation" content="Resumen Web Semántica">
+	<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+	<meta name="DCTERMS.created" scheme="ISO8601" content="16-2024-03">
 </head>
 <body>
     <h1>Esta es una pagina de ejemplo del uso de Microformatos en HTML</h1>
     <p style="font-family: 'Times New Roman', Times, serif">En este ejemplo se esta mostrando como dar formato al texto.</p>
 
     <dl class="dublincore">
-        <dt>Título:</dt>
-        <dd class="title">Resumen de Web Semántica</dd>
-        <dt>Dirección:</dt>
-        <dd><a href="https://github.com/manzamb/SemanticWebinAction/blob/master/Anotacion%20Curso/WebsiteAnotacion/01-HTML.htm" class="identifier">https://github.com/manzamb/SemanticWebinAction/blob/master/Anotacion%20Curso/WebsiteAnotacion/01-HTML.htm</a></dd>
-        <dt>Descripción:</dt>
-        <dd class="description">Este es un taller HTLM en el curso de Web Semántica</dd>
-        <dt>Palabras clave:</dt>
-        <dd class="subject">html, taller, Web Semántica</dd>
-        <dt>Código de idioma:</dt>
-        <dd class="language">es</dd>
-        <dt>Autor/a:</dt>
+        <dt>Título:</dt><dd class="title">Resumen de Web Semántica</dd>
+        <dt>Dirección:</dt><dd><a href="www.ejemplo.com/web-semantica" class="identifier">www.ejemplo.com/web-semantica</a></dd>
+        <dt>Descripción:</dt><dd class="description">La Web Semántica es una extensión de la web actual en la que la información tiene un significado bien definido, lo que permite a las máquinas entender y procesar la información de manera más efectiva</dd>
+        <dt>Palabras clave:</dt><dd class="subject">websemantica, hipertexto</dd>
+        <dt>Código de idioma:</dt><dd class="language">es</dd>
+        <dt>Autor/a:</dt><dd><a href="http://quijano.com" class="creator">Luz Quijano</a></dd>
+        <dt>Fecha de creación:</dt><dd class="created">16-2024-03</dd>
+        <dt>Recurso relacionado:</dt><dd class="relation">Resumen Web Semántica</dd>
+    </dl>
 
         <!--Estos dos enlaces son ejemplos del uso de microformatos para etiquetar dentro de las mismas etiquetas HTML-->
         <!--Para el caso de los atributos rel= "co-worker" y "friend" XFN (XHTML Friends Network)
@@ -53,5 +43,59 @@
         <dt>Fecha de creación:</dt>
         <dd class="created">2018-03-05</dd>
     </dl>
+    
+    <link rel="meta"
+	type="application/rdf+xml"
+	href="http://www.example.org/fichero.rdf" />
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Semántica</title>
+        <style>
+            h1 {
+                color: #4CAF50;
+            }
+            h2 {
+                color: #FFC107;
+            }
+            h3 {
+                color: #F44336;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Web Semántica</h1>
+        <h2>Definición</h2>
+        <p>La web semántica es una extensión de la web que busca integrar la información en la web de manera que las páginas web puedan entenderse entre sí. Esto se logra mediante el uso de lenguajes de marcado semántico, que permiten a las páginas web expresar su significado.</p>
+        <h2>Ejemplo</h2>
+        <p>Imagina que tienes una página web sobre perros y otra sobre gatos. Ambas páginas tienen información sobre el tamaño, el peso y el comportamiento de estos animales. En una web semántica, podrías usar etiquetas como <code>&lt;p&gt;</code> y <code>&lt;span&gt;</code> para expresar el significado de la información, y etiquetas como <code>&lt;strong&gt;</code> y <code>&lt;em&gt;</code> para resaltar ciertos aspectos. Por ejemplo:</p>
+        <pre>&lt;p&gt;El tamaño promedio de un perro es de &lt;strong&gt;50 cm&lt;/strong&gt;.&lt;/p&gt;
+    &lt;p&gt;El peso promedio de un perro es de &lt;strong&gt;15 kg&lt;em&gt; (sin contar el pelaje)&lt;/em&gt;.&lt;/p&gt;</pre>
+        <h2>Beneficios</h2>
+        <ul>
+            <li>Mejora la búsqueda de información en la web.</li>
+            <li>Facilita la integración de datos de diferentes fuentes.</li>
+            <li>Permite el desarrollo de aplicaciones más inteligentes y personalizadas.</li>
+        </ul>
+        <h2>Lenguajes de marcado semántico</h2>
+        <p>Existen varios lenguajes de marcado semántico, cada uno con sus propias etiquetas y características. Algunos de los más populares son:</p>
+        <ul>
+            <li><a href="https://www.w3.org/TR/html5/" target="_blank">HTML5</a></li>
+            <li><a href="https://www.w3.org/TR/xhtml1/" target="_blank">XHTML</a></li>
+            <li><a href="https://www.w3.org/TR/xml/" target="_blank">XML</a></li>
+            <li><a href="https://www.w3.org/TR/rdf-syntax-grammar/" target="_blank">RDF</a></li>
+            <li><a href="https://www.w3.org/TR/owl-features/" target="_blank">OWL</a></li>
+        </ul>
+        <h2>Implementación</h2>
+        <p>La implementación de la web semántica requiere el uso de lenguajes de marcado semántico y la creación de ontologías, que son esquemas de descripción de conceptos y relaciones entre ellos. Además, es necesario contar con herramientas de procesamiento de datos semánticos, como razonadores y motores de búsqueda semántica.</p>
+        <h3>Ontologías</h3>
+        <p>Unaontología es un esquema de descripción de conceptos y relaciones entre ellos. Por ejemplo, una ontología de animales podría incluir conceptos como "perro", "gato", "mamífero", "carnívoro", etc., y relaciones como "es un tipo de", "tiene como característica", etc. Las ontologías se representan en lenguajes formales, como OWL, y se utilizan para describir los datos en la web.</p>
+        <h3>Razonadores</h3>
+        <p>Un razonador es una herramienta que permite inferir nuevos conocimientos a partir de los datos y las ontologías. Por ejemplo, si una ontología define que "todos los perros tienen pelo" y un dato indica que "Fido es un perro", un razonador podría inferir que "Fido tiene pelo". Los razonadores son esenciales para la web semántica, ya que permiten integrar y procesar los datos de manera automática.</p>
+        <h3>Motores de búsqueda semántica</h3>
+        <p>Un motor de búsqueda semántica es una herramienta que permite buscar información en la web utilizando conceptos y relaciones en lugar de palabras clave. Por ejemplo, en lugar de buscar "perros grandes", podrías buscar "animales de tamaño grande que sean mamíferos y tengan pelo". Los motores de búsqueda semántica son una de las aplicaciones más importantes de la web semántica, ya que permiten encontrar información más relevante y precisa.</p>
+    </body>
+    </html>
 </body>
 </html>
